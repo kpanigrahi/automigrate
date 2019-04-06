@@ -1,0 +1,25 @@
+.sidenav-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  background-color: gray;
+  text-transform: uppercase;
+}
+
+.logo {
+  height: 70px;
+  width: 95px;
+  margin-left: -25px;
+  margin-right: -10px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

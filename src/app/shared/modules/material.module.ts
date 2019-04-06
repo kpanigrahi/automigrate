@@ -4,6 +4,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 import { CdkTableModule } from '@angular/cdk/table';
 import { CdkTreeModule } from '@angular/cdk/tree';
+import { LayoutModule } from '@angular/cdk/layout';
 import { NgModule } from '@angular/core';
 import {
   MatAutocompleteModule,
@@ -50,6 +51,7 @@ import {
     CdkTableModule,
     CdkTreeModule,
     DragDropModule,
+    LayoutModule,
     MatAutocompleteModule,
     MatBadgeModule,
     MatBottomSheetModule,
