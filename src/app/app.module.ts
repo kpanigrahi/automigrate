@@ -10,11 +10,15 @@ import { MaterialModule } from './shared/modules/material.module';
 
 // custom component section
 import { NavBarComponent } from './ui/nav-bar/nav-bar.component';
+import { ProfileComponent } from './ui/profile/profile.component';
+import { SettingsComponent } from './ui/settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    ProfileComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

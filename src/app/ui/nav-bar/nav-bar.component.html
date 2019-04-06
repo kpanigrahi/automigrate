@@ -6,10 +6,10 @@
   <img class="logo" src="../../../assets/images/pwc_logo.png">
   <span>{{ appName }}</span>
   <span class="spacer"></span>
-  <button mat-icon-button>
+  <button mat-icon-button routerLink="settings">
     <mat-icon>settings</mat-icon>
   </button>
-  <button mat-icon-button>
+  <button mat-icon-button routerLink="profile">
     <mat-icon>person</mat-icon>
   </button>
 </mat-toolbar>
@@ -20,10 +20,10 @@
     <!-- empty toolbar to match the top position-->
     <mat-toolbar></mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Items</a>
-      <a mat-list-item href="#">Projects</a>
-      <a mat-list-item href="#">Migrations</a>
-      <a mat-list-item href="#">Reports</a>
+      <a mat-list-item routerLink="items">Items</a>
+      <a mat-list-item routerLink="projects">Projects</a>
+      <a mat-list-item routerLink="migrations">Migrations</a>
+      <a mat-list-item routerLink="reports">Reports</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
