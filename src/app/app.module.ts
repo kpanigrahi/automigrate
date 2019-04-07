@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// http section
+import { HttpClientModule} from '@angular/common/http';
+
 // material section
 import { MaterialModule } from './shared/modules/material.module';
 
@@ -24,6 +27,7 @@ import { SettingsComponent } from './ui/settings/settings.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MaterialModule
   ],
   providers: [],
