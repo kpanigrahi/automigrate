@@ -5,11 +5,15 @@ import { ReportsRoutingModule } from './reports-routing.module';
 import { CreateComponent } from './create/create.component';
 import { ListComponent } from './list/list.component';
 
+// material section
+import { MaterialModule} from '../../shared/modules/material.module';
+
 @NgModule({
   declarations: [CreateComponent, ListComponent],
   imports: [
     CommonModule,
-    ReportsRoutingModule
+    ReportsRoutingModule,
+    MaterialModule
   ]
 })
 export class ReportsModule { }

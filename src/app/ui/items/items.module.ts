@@ -5,11 +5,15 @@ import { ItemsRoutingModule } from './items-routing.module';
 import { ListComponent } from './list/list.component';
 import { CreateComponent } from './create/create.component';
 
+// material section
+import { MaterialModule} from '../../shared/modules/material.module';
+
 @NgModule({
   declarations: [ListComponent, CreateComponent],
   imports: [
     CommonModule,
-    ItemsRoutingModule
+    ItemsRoutingModule,
+    MaterialModule
   ]
 })
 export class ItemsModule { }
