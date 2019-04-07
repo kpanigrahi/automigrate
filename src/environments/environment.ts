@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  appName: 'automigrate'
+  appName: 'automigrate',
+  apiURL: 'http://localhost:3000'
 };
 
 /*
