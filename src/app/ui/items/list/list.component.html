@@ -4,9 +4,56 @@
   </mat-card-header>
   <mat-divider></mat-divider>
   <mat-card-content>
+    <br>
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!-- Id Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+      <!-- Type Column -->
+      <ng-container matColumnDef="type">
+        <th mat-header-cell *matHeaderCellDef> Type </th>
+        <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+      </ng-container>
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+      <!-- Modified By Column -->
+      <ng-container matColumnDef="modifiedBy">
+        <th mat-header-cell *matHeaderCellDef> Modified By </th>
+        <td mat-cell *matCellDef="let element"> {{element.modifiedBy}} </td>
+      </ng-container>
+      <!-- Modified On Column -->
+      <ng-container matColumnDef="modifiedOn">
+        <th mat-header-cell *matHeaderCellDef> Modified On </th>
+        <td mat-cell *matCellDef="let element"> {{element.modifiedOn}} </td>
+      </ng-container>
+      <!-- Edit Column -->
+      <ng-container matColumnDef="edit">
+        <th mat-header-cell *matHeaderCellDef> Edit </th>
+        <td mat-cell *matCellDef="let element"> <button mat-icon-button>
+            <mat-icon>edit</mat-icon>
+          </button> </td>
+      </ng-container>
+      <!-- Delete Column -->
+      <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef> Delete </th>
+        <td mat-cell *matCellDef="let element"> <button mat-icon-button>
+            <mat-icon>delete</mat-icon>
+          </button> </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
   </mat-card-content>
   <mat-card-actions align="end">
     <button mat-raised-button>Cancel</button>
-    <button mat-raised-button>Save</button>
+    <button mat-raised-button>Create Item</button>
   </mat-card-actions>
 </mat-card>

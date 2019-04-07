@@ -63,7 +63,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": 3,
             "details": {
                 "name": "KP_AM_DATA_MODEL_1",
                 "type": 2,
@@ -89,7 +89,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": 4,
             "details": {
                 "name": "KP_AM_DATA_MODEL_2",
                 "type": 2,
@@ -115,7 +115,7 @@
             ]
         },
         {
-            "id": 8,
+            "id": 5,
             "details": {
                 "name": "KP_AM_DATA_MODEL_3",
                 "type": 2,
@@ -141,7 +141,7 @@
             ]
         },
         {
-            "id": 9,
+            "id": 6,
             "details": {
                 "name": "KP_AM_DATA_MODEL_4",
                 "type": 2,
