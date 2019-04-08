@@ -1,318 +1,280 @@
 {
-    "profile": {
-        "id": "",
-        "name": "Kiran Panigrahi",
-        "roles": [
-            "Administrator"
+  "profile": {
+    "id": "",
+    "name": "Kiran Panigrahi",
+    "roles": [
+      "Administrator"
+    ],
+    "email": "kiran.panigrahi@pwc.com"
+  },
+  "items": [
+    {
+      "id": 1,
+      "details": {
+        "type": 1,
+        "name": "KP_AM_TEST_VALUESET_1",
+        "desc": "Valueset - 1",
+        "modules": [
+          1,
+          6
         ],
-        "email": "kiran.panigrahi@pwc.com"
+        "modifiedBy": 1,
+        "modifiedOn": "2019-04-08T02:48:12.891Z"
+      }
     },
-    "items": [
+    {
+      "id": 2,
+      "details": {
+        "type": 1,
+        "name": "KP_AM_TEST_VALUESET_2",
+        "desc": "Valueset - 2",
+        "modules": [
+          1,
+          2,
+          6
+        ],
+        "modifiedBy": 1,
+        "modifiedOn": "2019-04-08T02:48:20.415Z"
+      }
+    },
+    {
+      "id": 3,
+      "details": {
+        "name": "KP_AM_DATA_MODEL_1",
+        "type": 2,
+        "desc": "Data mode - 1",
+        "modules": [
+          1
+        ],
+        "url": "",
+        "modifiedBy": 3,
+        "modifiedOn": "02/03/2019"
+      },
+      "dependencies": [
         {
-            "id": 1,
-            "details": {
-                "name": "KP_AM_TEST_VALUESET_1",
-                "type": 1,
-                "desc": "Valueset - 1",
-                "modules": [
-                    1,
-                    6
-                ],
-                "url": "HCMCloud/items/valueset/1.json",
-                "modifiedBy": 1,
-                "modifiedOn": "02/01/2019"
-            },
-            "dependencies": [
-                {
-                    "id": 7,
-                    "name": "KP_AM_DATA_MODEL_2",
-                    "type": 2
-                },
-                {
-                    "id": 1,
-                    "name": "KP_AM_TEST_VALUESET_1",
-                    "type": 1
-                }
-            ]
+          "id": 7,
+          "name": "KP_AM_DATA_MODEL_2",
+          "type": 2
         },
         {
-            "id": 2,
-            "details": {
-                "name": "KP_AM_TEST_VALUESET_2",
-                "type": 1,
-                "desc": "Valueset - 2",
-                "modules": [
-                    1,
-                    6
-                ],
-                "url": "HCMCloud/items/valueset/2.json",
-                "modifiedBy": 2,
-                "modifiedOn": "02/01/2019"
-            },
-            "dependencies": [
-                {
-                    "id": 7,
-                    "name": "KP_AM_DATA_MODEL_2",
-                    "type": 2
-                },
-                {
-                    "id": 1,
-                    "name": "KP_AM_TEST_VALUESET_1",
-                    "type": 1
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "details": {
-                "name": "KP_AM_DATA_MODEL_1",
-                "type": 2,
-                "desc": "Data mode - 1",
-                "modules": [
-                    1
-                ],
-                "url": "",
-                "modifiedBy": 3,
-                "modifiedOn": "02/03/2019"
-            },
-            "dependencies": [
-                {
-                    "id": 7,
-                    "name": "KP_AM_DATA_MODEL_2",
-                    "type": 2
-                },
-                {
-                    "id": 1,
-                    "name": "KP_AM_TEST_VALUESET_1",
-                    "type": 1
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "details": {
-                "name": "KP_AM_DATA_MODEL_2",
-                "type": 2,
-                "desc": "Data mode - 2",
-                "modules": [
-                    1
-                ],
-                "url": "",
-                "modifiedBy": 2,
-                "modifiedOn": "02/04/2019"
-            },
-            "dependencies": [
-                {
-                    "id": 7,
-                    "name": "KP_AM_DATA_MODEL_2",
-                    "type": 2
-                },
-                {
-                    "id": 1,
-                    "name": "KP_AM_TEST_VALUESET_1",
-                    "type": 1
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "details": {
-                "name": "KP_AM_DATA_MODEL_3",
-                "type": 2,
-                "desc": "Data mode - 3",
-                "modules": [
-                    1
-                ],
-                "url": "",
-                "modifiedBy": 1,
-                "modifiedOn": "02/04/2019"
-            },
-            "dependencies": [
-                {
-                    "id": 7,
-                    "name": "KP_AM_DATA_MODEL_2",
-                    "type": 2
-                },
-                {
-                    "id": 1,
-                    "name": "KP_AM_TEST_VALUESET_1",
-                    "type": 1
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "details": {
-                "name": "KP_AM_DATA_MODEL_4",
-                "type": 2,
-                "desc": "Data mode - 4",
-                "modules": [
-                    1
-                ],
-                "url": "",
-                "modifiedBy": 3,
-                "modifiedOn": "02/05/2019"
-            },
-            "dependencies": [
-                {
-                    "id": 7,
-                    "name": "KP_AM_DATA_MODEL_2",
-                    "type": 2
-                },
-                {
-                    "id": 1,
-                    "name": "KP_AM_TEST_VALUESET_1",
-                    "type": 1
-                }
-            ]
+          "id": 1,
+          "name": "KP_AM_TEST_VALUESET_1",
+          "type": 1
         }
-    ],
-    "projects": [
+      ]
+    },
+    {
+      "id": 4,
+      "details": {
+        "type": 2,
+        "name": "KP_AM_DATA_MODEL_2",
+        "desc": "Data mode - 2",
+        "modules": [
+          1
+        ],
+        "modifiedBy": 1,
+        "modifiedOn": "2019-04-08T02:48:23.250Z"
+      }
+    },
+    {
+      "id": 5,
+      "details": {
+        "name": "KP_AM_DATA_MODEL_3",
+        "type": 2,
+        "desc": "Data mode - 3",
+        "modules": [
+          1
+        ],
+        "url": "",
+        "modifiedBy": 1,
+        "modifiedOn": "02/04/2019"
+      },
+      "dependencies": [
         {
-            "id": 1,
-            "details": {
-                "name": "I397",
-                "desc": "Person data",
-                "modifiedBy": 1,
-                "modifiedOn": "2019-03-06T03:53:47.059Z",
-                "items": [
-                    {
-                        "id": 10,
-                        "name": "KP_HR_I397_PERSON_DATA_1",
-                        "type": 7
-                    },
-                    {
-                        "id": 11,
-                        "name": "KP_HR_I397_PERSON_DATA_V2",
-                        "type": 7
-                    },
-                    {
-                        "id": 13,
-                        "name": "KP_HR_I397_PERSON_DATA_V4",
-                        "type": 7
-                    },
-                    {
-                        "id": 12,
-                        "name": "KP_HR_I397_PERSON_DATA_V3",
-                        "type": 7
-                    }
-                ]
-            }
+          "id": 7,
+          "name": "KP_AM_DATA_MODEL_2",
+          "type": 2
         },
         {
-            "id": 2,
-            "details": {
-                "name": "I416",
-                "desc": "Payroll interface",
-                "modifiedBy": 1,
-                "modifiedOn": "2019-03-06T04:43:29.213Z",
-                "items": [
-                    {
-                        "id": 31,
-                        "name": "KP_PY_HCM_EXTRACT_V2",
-                        "type": 7
-                    },
-                    {
-                        "id": 2,
-                        "name": "KP_AM_TEST_VALUESET_2",
-                        "type": 1
-                    },
-                    {
-                        "id": 24,
-                        "name": "KP_AM_TEST_FASTFORMULA_2",
-                        "type": 5
-                    }
-                ]
-            }
+          "id": 1,
+          "name": "KP_AM_TEST_VALUESET_1",
+          "type": 1
         }
-    ],
-    "profiles": [
+      ]
+    },
+    {
+      "id": 6,
+      "details": {
+        "name": "KP_AM_DATA_MODEL_4",
+        "type": 2,
+        "desc": "Data mode - 4",
+        "modules": [
+          1
+        ],
+        "url": "",
+        "modifiedBy": 3,
+        "modifiedOn": "02/05/2019"
+      },
+      "dependencies": [
         {
-            "id": 1,
-            "name": "Kiran Panigrahi",
-            "role": [
-                "Administrator"
-            ],
-            "email": "kiran.panigrahi@pwc.com",
-            "modifiedOn": "2019-03-04T01:27:12.124Z"
+          "id": 7,
+          "name": "KP_AM_DATA_MODEL_2",
+          "type": 2
         },
         {
-            "id": 2,
-            "name": "Anubhav Verma",
-            "role": [
-                "Developer"
-            ],
-            "email": "anubhav.verma@pwc.com",
-            "modifiedOn": "2019-03-04T01:27:12.124Z"
-        },
-        {
-            "id": 3,
-            "name": "Sreenath V",
-            "role": [
-                "Developer"
-            ],
-            "email": "sreenath.v@pwc.com",
-            "modifiedOn": "2019-03-04T01:27:12.124Z"
+          "id": 1,
+          "name": "KP_AM_TEST_VALUESET_1",
+          "type": 1
         }
-    ],
-    "modules": [
-        {
-            "id": 1,
-            "value": "Absence Management"
-        },
-        {
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "details": {
+        "name": "I397",
+        "desc": "Person data",
+        "modifiedBy": 1,
+        "modifiedOn": "2019-03-06T03:53:47.059Z",
+        "items": [
+          {
+            "id": 10,
+            "name": "KP_HR_I397_PERSON_DATA_1",
+            "type": 7
+          },
+          {
+            "id": 11,
+            "name": "KP_HR_I397_PERSON_DATA_V2",
+            "type": 7
+          },
+          {
+            "id": 13,
+            "name": "KP_HR_I397_PERSON_DATA_V4",
+            "type": 7
+          },
+          {
+            "id": 12,
+            "name": "KP_HR_I397_PERSON_DATA_V3",
+            "type": 7
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "details": {
+        "name": "I416",
+        "desc": "Payroll interface",
+        "modifiedBy": 1,
+        "modifiedOn": "2019-03-06T04:43:29.213Z",
+        "items": [
+          {
+            "id": 31,
+            "name": "KP_PY_HCM_EXTRACT_V2",
+            "type": 7
+          },
+          {
             "id": 2,
-            "value": "Benefits"
-        },
-        {
-            "id": 3,
-            "value": "Human Resource"
-        },
-        {
-            "id": 4,
-            "value": "Contigent Talent Management"
-        },
-        {
-            "id": 5,
-            "value": "Time and Labor"
-        },
-        {
-            "id": 6,
-            "value": "Payroll"
-        }
-    ],
-    "itemTypes": [
-        {
-            "id": 1,
-            "name": "Valueset"
-        },
-        {
-            "id": 2,
-            "name": "Data Model"
-        },
-        {
-            "id": 3,
-            "name": "Data Report"
-        },
-        {
-            "id": 4,
-            "name": "User Defined Table"
-        },
-        {
-            "id": 5,
-            "name": "Fastformula"
-        },
-        {
-            "id": 6,
-            "name": "Payroll Flow"
-        },
-        {
-            "id": 7,
-            "name": "HCM Extract"
-        },
-        {
-            "id": 8,
-            "name": "FSM Package"
-        }
-    ]
+            "name": "KP_AM_TEST_VALUESET_2",
+            "type": 1
+          },
+          {
+            "id": 24,
+            "name": "KP_AM_TEST_FASTFORMULA_2",
+            "type": 5
+          }
+        ]
+      }
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Kiran Panigrahi",
+      "role": [
+        "Administrator"
+      ],
+      "email": "kiran.panigrahi@pwc.com",
+      "modifiedOn": "2019-03-04T01:27:12.124Z"
+    },
+    {
+      "id": 2,
+      "name": "Anubhav Verma",
+      "role": [
+        "Developer"
+      ],
+      "email": "anubhav.verma@pwc.com",
+      "modifiedOn": "2019-03-04T01:27:12.124Z"
+    },
+    {
+      "id": 3,
+      "name": "Sreenath V",
+      "role": [
+        "Developer"
+      ],
+      "email": "sreenath.v@pwc.com",
+      "modifiedOn": "2019-03-04T01:27:12.124Z"
+    }
+  ],
+  "modules": [
+    {
+      "id": 1,
+      "name": "Absence Management"
+    },
+    {
+      "id": 2,
+      "name": "Benefits"
+    },
+    {
+      "id": 3,
+      "name": "Human Resource"
+    },
+    {
+      "id": 4,
+      "name": "Contigent Talent Management"
+    },
+    {
+      "id": 5,
+      "name": "Time and Labor"
+    },
+    {
+      "id": 6,
+      "name": "Payroll"
+    }
+  ],
+  "itemTypes": [
+    {
+      "id": 1,
+      "name": "Valueset"
+    },
+    {
+      "id": 2,
+      "name": "Data Model"
+    },
+    {
+      "id": 3,
+      "name": "Data Report"
+    },
+    {
+      "id": 4,
+      "name": "User Defined Table"
+    },
+    {
+      "id": 5,
+      "name": "Fastformula"
+    },
+    {
+      "id": 6,
+      "name": "Payroll Flow"
+    },
+    {
+      "id": 7,
+      "name": "HCM Extract"
+    },
+    {
+      "id": 8,
+      "name": "FSM Package"
+    }
+  ]
 }

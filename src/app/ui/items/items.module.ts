@@ -7,6 +7,7 @@ import { CreateComponent } from './create/create.component';
 
 // material section
 import { MaterialModule} from '../../shared/modules/material.module';
+// import { ToDeleteComponent } from './dialogs/to-delete/to-delete.component';
 
 @NgModule({
   declarations: [ListComponent, CreateComponent],

@@ -1,16 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
 import { MatTableDataSource } from '@angular/material';
+import { Router } from '@angular/router';
+
+// material section
+import { MatDialog } from '@angular/material';
 
 // service section
 import { ItemsService } from '../items.service';
 import { ItemTypeService } from '../../../shared/services/item-type.service';
-import { UserProfileService} from '../../../shared/services/user-profile.service';
+import { UserProfileService } from '../../../shared/services/user-profile.service';
 
 // model section
 import { Item } from '../../../shared/models/item.model';
 import { ItemType } from '../../../shared/models/itemType.model';
 import { UserProfile } from '../../../shared/models/userProfile.model';
+
+// dialog section
+import { ToDeleteComponent } from '../dialogs/to-delete/to-delete.component';
 
 export interface ListItem {
   id: number;
@@ -38,7 +45,9 @@ export class ListComponent implements OnInit {
   constructor(
     private sItems_: ItemsService,
     private sItemType_: ItemTypeService,
-    private sUserProfile_: UserProfileService
+    private sUserProfile_: UserProfileService,
+    private router: Router,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit() {
@@ -73,5 +82,30 @@ export class ListComponent implements OnInit {
       listItems.push(listItem);
     }
     return listItems;
+  }
+
+  onEdit(id: number) {
+    this.router.navigate(['items/edit', id]);
+  }
+
+  onDelete(item: Item) {
+    const dialogRef = this.dialog.open(ToDeleteComponent, {
+      width: '350px',
+      data: item
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.sItems_.delete(result.id).subscribe(
+          () => {
+            console.log('item ' + result.name + ' successfully deleted...');
+            this.getAll();
+          },
+          (error: any) => {
+            console.log(error);
+          }
+        );
+      }
+    });
   }
 }

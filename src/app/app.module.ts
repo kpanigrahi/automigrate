@@ -15,13 +15,15 @@ import { MaterialModule } from './shared/modules/material.module';
 import { NavBarComponent } from './ui/nav-bar/nav-bar.component';
 import { ProfileComponent } from './ui/profile/profile.component';
 import { SettingsComponent } from './ui/settings/settings.component';
+import { ToDeleteComponent } from './ui/items/dialogs/to-delete/to-delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     ProfileComponent,
-    SettingsComponent
+    SettingsComponent,
+    ToDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { SettingsComponent } from './ui/settings/settings.component';
     MaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ToDeleteComponent]
 })
 export class AppModule { }

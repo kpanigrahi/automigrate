@@ -1,3 +1,93 @@
-<p>
-  create works!
-</p>
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{ cardTitle }}</mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <form [formGroup]="itemForm">
+      <mat-tab-group>
+        <mat-tab label="Details">
+          <div class="container">
+            <br>
+            <mat-form-field>
+              <mat-label>Item Type</mat-label>
+              <mat-select formControlName="type" required>
+                <mat-option *ngFor="let itemType of sItemType_.itemTypes" [value]="itemType.id">
+                  {{itemType.name}}
+                </mat-option>
+              </mat-select>
+              <mat-error>Item type is <strong>required.</strong></mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Item Name" formControlName="name" required>
+              <mat-error>Item name is <strong>required.</strong></mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Description" formControlName="desc">
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Modules</mat-label>
+              <mat-select multiple formControlName="modules" required>
+                <mat-option *ngFor="let module of sModule_.modules" [value]="module.id">
+                  {{module.name}}
+                </mat-option>
+              </mat-select>
+              <mat-error>Module is <strong>required.</strong></mat-error>
+            </mat-form-field>
+          </div>
+        </mat-tab>
+        <mat-tab label="Dependencies">
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!-- Checkbox Column -->
+            <ng-container matColumnDef="select">
+              <th mat-header-cell *matHeaderCellDef>
+                <mat-checkbox (change)="$event ? masterToggle() : null"
+                  [checked]="selection.hasValue() && isAllSelected()"
+                  [indeterminate]="selection.hasValue() && !isAllSelected()" [aria-label]="checkboxLabel()">
+                </mat-checkbox>
+              </th>
+              <td mat-cell *matCellDef="let row">
+                <mat-checkbox (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+                  [checked]="selection.isSelected(row)" [aria-label]="checkboxLabel(row)">
+                </mat-checkbox>
+              </td>
+            </ng-container>
+
+            <!-- Id Column -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> Id </th>
+              <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+
+            <!-- Type Column -->
+            <ng-container matColumnDef="type">
+              <th mat-header-cell *matHeaderCellDef> Type </th>
+              <td mat-cell *matCellDef="let element"> {{element.details.type}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element.details.name}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)">
+            </tr>
+          </table>
+        </mat-tab>
+        <mat-tab label="References" *ngIf="mode != 'Create'">
+          Content 3
+        </mat-tab>
+        <mat-tab label="Versions" *ngIf="mode != 'Create'">
+          Content 4
+        </mat-tab>
+      </mat-tab-group>
+    </form>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-raised-button routerLink="/items">Cancel</button>
+    <button mat-raised-button (click)="onSave()">Save</button>
+  </mat-card-actions>
+</mat-card>

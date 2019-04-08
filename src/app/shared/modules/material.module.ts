@@ -44,6 +44,8 @@ import {
   MatTreeModule,
 } from '@angular/material';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   exports: [
     A11yModule,
@@ -88,6 +90,8 @@ import {
     MatTooltipModule,
     MatTreeModule,
     ScrollingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialModule { }
