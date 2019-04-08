@@ -17,7 +17,7 @@ import { ItemType } from '../../../shared/models/itemType.model';
 import { UserProfile } from '../../../shared/models/userProfile.model';
 
 // dialog section
-import { ToDeleteComponent } from '../dialogs/to-delete/to-delete.component';
+import { ToDeleteComponent } from '../../dialogs/to-delete/to-delete.component';
 
 export interface ListItem {
   id: number;

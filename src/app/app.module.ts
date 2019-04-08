@@ -15,7 +15,7 @@ import { MaterialModule } from './shared/modules/material.module';
 import { NavBarComponent } from './ui/nav-bar/nav-bar.component';
 import { ProfileComponent } from './ui/profile/profile.component';
 import { SettingsComponent } from './ui/settings/settings.component';
-import { ToDeleteComponent } from './ui/items/dialogs/to-delete/to-delete.component';
+import { ToDeleteComponent } from './ui/dialogs/to-delete/to-delete.component';
 
 @NgModule({
   declarations: [
